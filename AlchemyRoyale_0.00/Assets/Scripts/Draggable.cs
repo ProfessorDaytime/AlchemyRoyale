@@ -34,7 +34,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
         //get location on object where dragging from to use as an offset
         parentToReturnTo = this.transform.parent;
-        Debug.Log(parentToReturnTo);
+        // Debug.Log(parentToReturnTo);
         placeHolderParent = parentToReturnTo;
         this.transform.SetParent( this.transform.parent.parent);
 

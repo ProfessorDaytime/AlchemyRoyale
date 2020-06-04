@@ -33,19 +33,19 @@ public class Deck_Ingr : MonoBehaviour, IPointerClickHandler
         Debug.Log("Strt");
         for(int i = 0; i < 12; i++){
             deck.Add(toadstool);
-            Debug.Log("toadstool");
+            
             deck.Add(elderberries);
-            Debug.Log("elderberries");
+            
             deck.Add(goldDust);
-            Debug.Log("gold dust");
+            
             if(i < 9){
                 deck.Add(snakeVenom);
-                Debug.Log("snake venom");
+                
                 deck.Add(quicksilver);
-                Debug.Log("quicksilver");
+                
                 if(i < 6){
                     deck.Add(starDust);
-                    Debug.Log("star dust");
+                    
                 }
             }
         }
@@ -86,7 +86,7 @@ public class Deck_Ingr : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData){
 
         
-        // Debug.Log("CLICK");
+        
         for(int i = 0; i < 3; i++){
             GameObject inHand = Instantiate(deck[0], new Vector3(0, 0, 0), Quaternion.identity);
             inHand.transform.SetParent(handArea.transform, false);

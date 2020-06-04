@@ -59,7 +59,13 @@ public class Player : MonoBehaviour
 
     public void AddToHand(GameObject ingredient){
         hand.Add(ingredient);
-        Debug.Log(ingredient);
+        Debug.Log(ingredient.name);
+    }
+
+    public void RemoveFromHand(GameObject ingredient){
+        Debug.Log("hand size: " + hand.Count);
+        hand.Remove(ingredient);
+        Debug.Log("hand size after remove: " + hand.Count);
     }
 
     // Start is called before the first frame update

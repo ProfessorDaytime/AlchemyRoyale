@@ -216,7 +216,6 @@ GameObject:
   - component: {fileID: 177562691}
   - component: {fileID: 177562690}
   - component: {fileID: 177562689}
-  - component: {fileID: 177562692}
   m_Layer: 5
   m_Name: Forest Floor
   m_TagString: Untagged
@@ -305,13 +304,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177562687}
   m_CullTransparentMesh: 0
---- !u!114 &177562692
+--- !u!1 &341673075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5195855464524952955, guid: 2d7f9db942cc5d545adbfe893a5b76a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 573198874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &341673076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177562687}
+  m_GameObject: {fileID: 341673075}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 411066489725dad4fbd3aed03ed47aba, type: 3}
@@ -549,7 +554,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deck_Disc
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5628989896235030982, guid: 2d7f9db942cc5d545adbfe893a5b76a0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2d7f9db942cc5d545adbfe893a5b76a0, type: 3}
 --- !u!1 &721174330
 GameObject:
